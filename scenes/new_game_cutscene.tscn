@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cv8wq0jnvbwl0"]
+
+[ext_resource type="PackedScene" uid="uid://dhkfk2tl0hk3q" path="res://scenes/rain_scene.tscn" id="1_2rwkt"]
+
+[node name="new_game_cutscene" type="Node2D" unique_id=1670878349]
+
+[node name="rain_scene" parent="." unique_id=1038252582 instance=ExtResource("1_2rwkt")]

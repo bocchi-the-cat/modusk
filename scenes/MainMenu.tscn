@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://do254ih0vfu6o"]
+
+[ext_resource type="Script" uid="uid://3ghrilxvgm7w" path="res://scenes/main_menu.gd" id="1_2wh52"]
+[ext_resource type="Texture2D" uid="uid://xjjugokhyo4o" path="res://assets/characters/aether/aether_spritesheet.png" id="1_yqorp"]
+[ext_resource type="FontFile" uid="uid://besiu2rhyfab7" path="res://assets/fonts/VCR_OSD_MONO.ttf" id="2_0ykhv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ykhv"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(0, 0, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wh52"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(15, 0, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ow34m"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(30, 0, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l72w3"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(0, 25, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_826wr"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(15, 25, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucygd"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(30, 25, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mipys"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(0, 50, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a8k8"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(15, 50, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7la6k"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(30, 50, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nypq"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(0, 75, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bky6r"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(15, 75, 15, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4mxc"]
+atlas = ExtResource("1_yqorp")
+region = Rect2(30, 75, 15, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7y3yr"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_0ykhv")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_2wh52")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ow34m")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_l72w3")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_826wr")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ucygd")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_mipys")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_8a8k8")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_7la6k")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_2nypq")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_bky6r")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_l4mxc")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7y3yr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2wh52"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q06uo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_62jji"]
+
+[node name="MainMenu" type="Control" unique_id=1281307012]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2wh52")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1986632312]
+custom_minimum_size = Vector2(1152, 648)
+custom_maximum_size = Vector2(1152, 648)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(5.4147094e-08, 0.16769385, 0.18822417, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1453383710]
+position = Vector2(875, 353.99997)
+scale = Vector2(15.98, 15.98)
+sprite_frames = SubResource("SpriteFrames_7y3yr")
+autoplay = "default"
+frame_progress = 0.82760906
+
+[node name="new_game_button" type="Button" parent="." unique_id=1593434184]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 310.0
+offset_right = 346.0
+offset_bottom = 377.0
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_0ykhv")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7y3yr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2wh52")
+text = "New Game"
+
+[node name="credits_button" type="Button" parent="." unique_id=1337002143]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 385.0
+offset_right = 349.0
+offset_bottom = 452.0
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_0ykhv")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q06uo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_62jji")
+text = "Credits"
+alignment = 0
+
+[connection signal="pressed" from="new_game_button" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="credits_button" to="." method="_on_credits_button_pressed"]

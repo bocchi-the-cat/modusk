@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dhkfk2tl0hk3q"]
+
+[ext_resource type="Texture2D" uid="uid://fe7er8md626b" path="res://assets/particles/rain.png" id="1_5p2qr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bw6k5"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(626, 10, 1)
+direction = Vector3(0, 1, 0)
+spread = 5.0
+initial_velocity_min = 500.0
+initial_velocity_max = 700.0
+gravity = Vector3(100, 200, 0)
+scale_max = 3.0
+
+[node name="rain_scene" type="Node2D" unique_id=1038252582]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=863185416]
+position = Vector2(580, -53)
+amount = 3000
+texture = ExtResource("1_5p2qr")
+lifetime = 1.01
+randomness = 0.2
+process_material = SubResource("ParticleProcessMaterial_bw6k5")

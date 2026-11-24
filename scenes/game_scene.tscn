@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dt1mnb3mu1ufi"]
+
+[ext_resource type="PackedScene" uid="uid://b1ugm1ksmpbnn" path="res://scenes/hotbar_scene.tscn" id="1_onqr8"]
+[ext_resource type="PackedScene" uid="uid://d181sa6djur1f" path="res://scenes/ui_scene.tscn" id="2_ycayy"]
+
+[node name="game_scene" type="Node2D" unique_id=269097837]
+
+[node name="hotbar_scene" parent="." unique_id=809022301 instance=ExtResource("1_onqr8")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+offset_left = 275.0
+offset_top = 96.0
+offset_right = 275.0
+offset_bottom = 96.0
+grow_vertical = 0
+
+[node name="money_scene" parent="." unique_id=1520158015 instance=ExtResource("2_ycayy")]
+offset_left = 1152.0
+offset_right = 1152.0

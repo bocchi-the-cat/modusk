@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://crb3ijmb5mqh8"]
+
+[ext_resource type="Script" uid="uid://dyw0m28t5njf1" path="res://scenes/Credits.gd" id="1_spvsy"]
+[ext_resource type="FontFile" uid="uid://besiu2rhyfab7" path="res://assets/fonts/VCR_OSD_MONO.ttf" id="2_gw1d4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7y3yr"]
+
+[node name="Credits" type="Control" unique_id=292468000]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_spvsy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1336069493]
+custom_minimum_size = Vector2(1152, 648)
+custom_maximum_size = Vector2(1152, 648)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(5.4147094e-08, 0.16769385, 0.18822417, 1)
+
+[node name="credits_label" type="Label" parent="ColorRect" unique_id=884125137]
+layout_mode = 0
+offset_right = 279.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_gw1d4")
+theme_override_font_sizes/font_size = 30
+text = "Wooden Hotbar Texture: Keruto.itch.io
+Character:             Terraria
+Font:                  Riciery Leal 
+"
+vertical_alignment = 1
+
+[node name="backtomainmenu_button" type="Button" parent="." unique_id=1456220530]
+layout_mode = 0
+offset_left = 938.0
+offset_top = 591.0
+offset_right = 1146.0
+offset_bottom = 643.0
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_gw1d4")
+theme_override_font_sizes/font_size = 59
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7y3yr")
+text = "← BACK"
+
+[connection signal="pressed" from="backtomainmenu_button" to="." method="_on_backtomainmenu_button_pressed"]
