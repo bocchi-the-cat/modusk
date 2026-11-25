@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://8tb4awt08tu8"]
+
+[ext_resource type="Texture2D" uid="uid://dvg2pxomls3xn" path="res://assets/textbox/nagito_textbox.png" id="1_gnn2i"]
+[ext_resource type="FontFile" uid="uid://besiu2rhyfab7" path="res://assets/fonts/VCR_OSD_MONO.ttf" id="2_gnn2i"]
+[ext_resource type="Script" uid="uid://bk78p5y6chxxp" path="res://scenes/text.gd" id="3_gnn2i"]
+
+[node name="aether_dialogue_box" type="Control" unique_id=73667152]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="textbox texture" type="TextureRect" parent="." unique_id=364354691]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -576.0
+offset_top = -216.0
+offset_right = 576.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_gnn2i")
+
+[node name="Aether" type="Label" parent="textbox texture" unique_id=627285551]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 158.0
+offset_bottom = 30.0
+theme_override_fonts/font = ExtResource("2_gnn2i")
+theme_override_font_sizes/font_size = 35
+text = "Aether"
+horizontal_alignment = 1
+
+[node name="text" type="Label" parent="textbox texture" unique_id=56098703]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 1.0
+offset_right = 1150.0
+offset_bottom = 213.0
+theme_override_colors/font_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
+theme_override_fonts/font = ExtResource("2_gnn2i")
+theme_override_font_sizes/font_size = 33
+text = "sfgjfghg"
+autowrap_mode = 2
+script = ExtResource("3_gnn2i")

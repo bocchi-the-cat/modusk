@@ -1,0 +1,20 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 6 -start_number 0 -start_number_range 1 -i C:/Users/astra/Desktop/modusk/assets/cutscenes/frame%04d.png -c:v libopenh264 -b:v 5000k C:/Users/astra/Desktop/modusk/assets/cutscenes/slot_machine.mp4
+=====================================================
+Input #0, image2, from 'C:/Users/astra/Desktop/modusk/assets/cutscenes/frame%04d.png':
+  Duration: 00:00:04.04, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 228x162 [SAR 11811:11811 DAR 38:27], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+Press [q] to stop, [?] for help
+[libopenh264 @ 00000139c836d300] [OpenH264] this = 0x00000139CA09D3B0, Warning:layerId(0) doesn't support profile(578), change to UNSPECIFIC profile
+[libopenh264 @ 00000139c836d300] [OpenH264] this = 0x00000139CA09D3B0, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, mp4, to 'C:/Users/astra/Desktop/modusk/assets/cutscenes/slot_machine.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 228x162 [SAR 1:1 DAR 38:27], q=2-31, 5000 kb/s, 6 fps, 12288 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libopenh264
+    Side data:
+      cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 00000139c829c900] video:59KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.077468%
+frame=  101 fps=0.0 q=-0.0 Lsize=      60KiB time=00:00:16.83 bitrate=  29.1kbits/s speed= 353x elapsed=0:00:00.04    

@@ -1,7 +1,32 @@
 [gd_scene format=3 uid="uid://cv8wq0jnvbwl0"]
 
-[ext_resource type="PackedScene" uid="uid://dhkfk2tl0hk3q" path="res://scenes/rain_scene.tscn" id="1_2rwkt"]
+[ext_resource type="VideoStream" uid="uid://d2j2wuaesrleq" path="res://assets/cutscenes/slot_machine.ogv" id="1_2rwkt"]
+[ext_resource type="Script" uid="uid://dv2dopx4hhkp5" path="res://scenes/new_game_cutscene.gd" id="1_77t35"]
+[ext_resource type="PackedScene" uid="uid://8tb4awt08tu8" path="res://scenes/aether_dialogue_box.tscn" id="2_1qmn3"]
+[ext_resource type="PackedScene" uid="uid://d181sa6djur1f" path="res://scenes/ui_scene.tscn" id="4_1qmn3"]
 
 [node name="new_game_cutscene" type="Node2D" unique_id=1670878349]
+script = ExtResource("1_77t35")
 
-[node name="rain_scene" parent="." unique_id=1038252582 instance=ExtResource("1_2rwkt")]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1561692675]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 116.0
+offset_top = -3.0
+offset_right = 344.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.985, 3.985)
+stream = ExtResource("1_2rwkt")
+
+[node name="aether_dialogue_box" parent="." unique_id=73667152 instance=ExtResource("2_1qmn3")]
+offset_left = 577.0
+offset_top = 647.0
+offset_right = 577.0
+offset_bottom = 647.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1678305814]
+
+[node name="ui_scene" parent="CanvasLayer" unique_id=1520158015 instance=ExtResource("4_1qmn3")]

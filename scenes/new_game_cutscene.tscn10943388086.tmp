@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cv8wq0jnvbwl0"]
+
+[ext_resource type="VideoStream" uid="uid://d2j2wuaesrleq" path="res://assets/cutscenes/slot_machine.ogv" id="1_2rwkt"]
+[ext_resource type="Script" uid="uid://dv2dopx4hhkp5" path="res://scenes/new_game_cutscene.gd" id="1_77t35"]
+[ext_resource type="PackedScene" uid="uid://8tb4awt08tu8" path="res://scenes/aether_dialogue_box.tscn" id="2_1qmn3"]
+
+[node name="new_game_cutscene" type="Node2D" unique_id=1670878349]
+script = ExtResource("1_77t35")
+
+[node name="aether_dialogue_box" parent="." unique_id=73667152 instance=ExtResource("2_1qmn3")]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1561692675]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 113.03705
+offset_top = 3.0
+offset_right = 1018.00006
+offset_bottom = 646.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_2rwkt")
+autoplay = true
+expand = true

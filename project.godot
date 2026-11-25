@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://di46fc2yvom0k"
 config/windows_native_icon="res://assets/icons/256x256.ico"
 
+[autoload]
+
+Globals="*uid://d15g3tyo7vadf"
+
 [display]
 
 window/stretch/mode="canvas_items"

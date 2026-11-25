@@ -123,7 +123,7 @@ offset_bottom = 648.0
 color = Color(5.4147094e-08, 0.16769385, 0.18822417, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1453383710]
-position = Vector2(875, 353.99997)
+position = Vector2(941, 333)
 scale = Vector2(15.98, 15.98)
 sprite_frames = SubResource("SpriteFrames_7y3yr")
 autoplay = "default"
